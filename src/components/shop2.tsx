@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ProductDetailsTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("description");
@@ -35,7 +36,7 @@ const ProductDetailsTabs: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Left Column: Image */}
             <div className="flex justify-center lg:col-span-1">
-              <img
+              <Image
                 src="/quick.png"
                 alt="Decorative"
                 className="rounded-lg shadow-md w-full h-auto"
