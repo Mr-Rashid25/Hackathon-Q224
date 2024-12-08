@@ -45,7 +45,7 @@ const ShopPage: React.FC = () => {
         {/* Product Images Section */}
         <div className="flex flex-col">
           <div className="relative">
-            <img
+            <Image
               src={productImages[currentImageIndex]}  // Dynamically changing images
               alt="Product"
               className="w-full h-[400px] object-cover rounded-lg"
